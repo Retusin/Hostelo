@@ -1,0 +1,62 @@
+.form {
+  position: relative;
+  border-radius: 20px;
+  padding: 51px 20px 0;
+  max-width: 500px;
+  box-shadow: 0 22px 38px rgba(0, 34, 19, 0.04);
+  background: #fff;
+
+  &__label {
+    margin-right: 20px;
+
+    &--big {
+      position: relative;
+    }
+  }
+
+  &__input {
+    margin-bottom: 21px;
+    border-radius: 8px;
+    padding: 12px 54px;
+    width: 216px;
+    height: 56px;
+    background-position: 20px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 133%;
+      color: #222;
+      background: #fafafa;
+    }
+
+    &--date {
+      padding: 12px 46px 12px 54px;
+      background-image: url("../img/calendar.svg");
+    }
+
+    &--guests {
+      background-image: url("../img/person.svg");
+    }
+
+    &--big {
+      padding-right: 64px;
+      width: 460px;
+      background-image: url("../img/pin.svg");
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 20px;
+    bottom: 51px;
+    border-radius: 8px;
+    width: 56px;
+    height: 56px;
+    background-image: url("../img/search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #3771c8;
+  }
+}

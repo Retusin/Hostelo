@@ -1,0 +1,27 @@
+.hero {
+  padding-bottom: 40px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 130px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 476px;
+  }
+
+  &__promo {
+    grid-column: span 6;
+  }
+
+  &__form {
+    grid-column: span 5;
+  }
+}

@@ -1,0 +1,12 @@
+.partners {
+  padding-bottom: 97px;
+
+  &__container {
+    max-width: 1140px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

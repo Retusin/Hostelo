@@ -1,0 +1,19 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/form";
+@import "./components/gallery";
+@import "./components/service";
+@import "./components/hotels";
+@import "./components/partners";
+@import "./components/review";
+@import "./components/review-slide";
+@import "./components/quality";
+@import "./components/tabs";

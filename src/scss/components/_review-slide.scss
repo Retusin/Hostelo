@@ -1,0 +1,42 @@
+.review-slide {
+  padding: 42px 0;
+  text-align: center;
+
+  &__img {
+    margin-bottom: 6px;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #555;
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 498px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 120%;
+    color: #222;
+  }
+}
+
+.swiper .swiper-pagination {
+  bottom: 41px;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid rgba(55, 113, 200, 0.28);
+  width: 9px;
+  height: 0;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px;
+}

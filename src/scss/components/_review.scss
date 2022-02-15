@@ -1,0 +1,14 @@
+.review {
+  padding-bottom: 125px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slider {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #f9d15c;
+  }
+}
