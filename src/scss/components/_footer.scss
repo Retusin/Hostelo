@@ -1,0 +1,50 @@
+.footer {
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1098px;
+  }
+
+  &__info {
+    max-width: 264px;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #555;
+  }
+
+  &__list {
+    padding-top: 10px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 133%;
+    color: #222;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 150%;
+    color: #222;
+  }
+}
