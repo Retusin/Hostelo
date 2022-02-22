@@ -7,4 +7,18 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @include big-tablet {
+    padding-bottom: 40px;
+  }
+}
+
+.burger {
+  @include burger;
+
+  display: none;
+
+  @include big-tablet {
+    display: block;
+  }
 }

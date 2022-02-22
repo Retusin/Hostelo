@@ -6,16 +6,6 @@ $wrapper-min: 280px !default;
 $container-max-widths: 1310px;
 $container-padding: 15px;
 
-// Контрольные точки
-$breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-) !default;
-
 // Шрифт
 $font-family-base: "OpenSans", sans-serif;
 $font-weight-base: 400;

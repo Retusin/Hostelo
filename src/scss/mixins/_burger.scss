@@ -2,7 +2,7 @@
 
 @mixin burger {
   --burger-width: 30px;
-  --burger-height: 30px;
+  --burger-height: 20px;
   --burger-line-height: 2px;
 
   position: relative;
@@ -35,7 +35,7 @@
 
   &__line {
     position: absolute;
-    left: 0;
+    left: 7px;
     top: 50%;
     width: 100%;
     height: var(--burger-line-height);

@@ -121,24 +121,32 @@ body {
 
 .title {
   font-weight: 600;
-  font-size: 40px;
+  font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1310 - 320)));
   line-height: 125%;
   color: #000;
 
   &--big {
     font-size: 60px;
     line-height: 133%;
+
+    @include desktop {
+      font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1310 - 320)));
+    }
   }
 }
 
 .description {
-  font-size: 16px;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1310 - 320)));
   line-height: 175%;
   color: #555;
 
   &--big {
     font-size: 20px;
     line-height: 160%;
+
+    @include desktop {
+      font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1310 - 320)));
+    }
   }
 }
 

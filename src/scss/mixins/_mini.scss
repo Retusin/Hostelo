@@ -72,3 +72,11 @@ $browser-context: 16; // Default
   padding-right: $container-padding;
   margin: 0 auto;
 }
+
+
+@mixin adapt($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  #{$property}: calc(
+    #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$wrapper-max - 320})
+  );
+}

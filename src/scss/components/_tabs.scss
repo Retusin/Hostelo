@@ -11,6 +11,10 @@
     border-color: #000;
     background: transparent;
   }
+
+  @include tablet {
+    margin: 0 auto;
+  }
 }
 
 .tabs__panel {

@@ -21,14 +21,14 @@
     margin: 0 auto;
     max-width: 498px;
     font-weight: 300;
-    font-size: 30px;
+    font-size: calc(15px + (30 - 15) * ((100vw - 320px) / (1310 - 320)));
     line-height: 120%;
     color: #222;
   }
 }
 
 .swiper .swiper-pagination {
-  bottom: 41px;
+  bottom: 18px;
 }
 
 .swiper-pagination-bullet {

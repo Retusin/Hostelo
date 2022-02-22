@@ -1,6 +1,10 @@
 .gallery {
   padding-bottom: 94px;
 
+  @include mid-desktop {
+    display: none;
+  }
+
   &__list {
     display: grid;
     column-gap: 16px;

@@ -13,25 +13,49 @@
 
   &__info {
     margin-left: 61px;
+
+    @include small-tablet {
+      margin-left: 0;
+    }
   }
 
   &__title {
     margin: 0;
+    font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1310 - 320)));
     margin-bottom: 20px;
     padding-top: 59px;
     max-width: 701px;
+
+    @include small-tablet {
+      margin: 0 auto;
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 
   &__description {
     margin: 0;
-    margin-bottom: 93px;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1310 - 320)));
+    margin-bottom: 40px;
     max-width: 536px;
+
+    @include small-tablet {
+      margin: 0 auto;
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 
   &__form {
     position: relative;
     margin-left: 60px;
     max-width: max-content;
+
+    @include small-tablet {
+      margin: 0 auto;
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 
   &__input {
@@ -39,6 +63,11 @@
     padding: 20px 162px 20px 25px;
     width: 484px;
     height: 55px;
+
+    @include mobile {
+      padding: 20px 111px 20px 25px;
+      width: 300px;
+    }
 
     &::placeholder {
       font-size: 14px;
@@ -58,5 +87,9 @@
     line-height: 150%;
     color: #fff;
     background: #3771c8;
+
+    @include mobile {
+      padding: 16px 15px;
+    }
   }
 }

@@ -5,10 +5,21 @@
     display: flex;
     justify-content: space-between;
     max-width: 1098px;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__info {
     max-width: 264px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+      text-align: center;
+    }
   }
 
   &__logo {
@@ -26,6 +37,11 @@
 
   &__list {
     padding-top: 10px;
+
+    @include small-tablet {
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
 
   &__item {

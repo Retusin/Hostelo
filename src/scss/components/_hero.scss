@@ -1,27 +1,44 @@
 .hero {
   padding-bottom: 40px;
 
+  @include small {
+    padding-top: 80px;
+  }
+
   &__container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 130px;
+    display: flex;
+    justify-content: space-between;
+
+    @include small {
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin: 0;
     margin-bottom: 30px;
+    max-width: 646px;
+
+    @include small {
+      max-width: none;
+      text-align: center;
+    }
   }
 
   &__description {
     margin: 0;
     max-width: 476px;
+
+    @include small {
+      margin: 0 auto;
+      margin-bottom: 50px;
+      text-align: center;
+    }
   }
 
   &__promo {
-    grid-column: span 6;
   }
 
   &__form {
-    grid-column: span 5;
   }
 }
